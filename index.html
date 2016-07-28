@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="100度，带你去最hot的地方...">
+    <meta name="Keywords" content="红店铺，地铁交通，今日推荐，红人烧客，折扣店">
+    <link href="images/100du.ico" rel="shortcut icon" />
+    <title>==100度享乐网==</title>
+    <style type="text/css">
+        /* reset */
+        body,ul,li,ol,h1,h2,h3,h4,h5,h6,figure,p,input,dl,dd,dt,table,tr,td{margin: 0; padding: 0;}
+
+        /* for all */
+        body{font-family: '微软雅黑'; background: #fff;}
+        ul,ol{list-style: none;}
+        a{text-decoration:none;}
+        .container{width: 960px; margin: 0 auto; }
+        .clear{clear: both;}
+
+
+
+        /* spirit */
+        .spirit{background: url("images/spirit.png") no-repeat;}
+        .top_right_logo1{width:15px; height:12px; background-position:0 0; float: left; margin-top: 11px;}
+        .top_right_logo2{width:15px; height:12px; background-position:-16px 0; float: left; margin-top: 10px;}
+        .site_nav1{background-position:0 -14px;}
+        .site_nav2{background-position:-49px -14px;}
+        .site_nav3{background-position:-98px -14px;}
+        .site_nav4{background-position:-146px -14px;;}
+        .site_nav5{background-position:-196px -14px;}
+        .site_logo{width:223px; height:62px; background: url("images/site_logo.png") no-repeat; float: left; margin-top: 10px;}
+        .site_nav6{background-position:0 -111px;}
+        .site_nav7{background-position:-48px -111px;}
+        .site_nav8{background-position:-98px -111px;}
+        .site_nav9{background-position:-147px -111px;}
+        .site_nav10{background-position:-196px -111px;}
+        .update_img{width:50px; height:13px; background-position:-87px -287px; float: left; margin-top: 3px;}
+        .arrow_up{width:7px; height:4px; background-position:-88px -311px; float: left; margin: 4px 0 0 350px; cursor: pointer;}
+        .arrow_down{width:7px; height:4px; background-position:-98px -311px; float: left;margin: 5px 0 0 350px; cursor: pointer;}
+        .video_img{width:24px; height:24px; background-position:-88px -319px; margin: -2px 75px 0 0; float: right;}
+        .video_hot_log{width:66px; height:63px; background-position:-147px -286px; float: left;}
+        .more{width:37px; height:13px; background-position:-231px -286px;}
+        .today_topic_date1{width:26px;height:25px; background-position:-230px -363px;}
+        .today_topic_date2{width:26px;height:25px; background-position:-266px -363px;}
+        .recommend_list_logo1{width:13px;height:11px; background-position:-231px -400px;}
+        .recommend_list_logo2{width:13px;height:11px; background-position:-231px -418px;}
+        .subway_bt1{width:57px;height:27px; background-position:-46px -436px;}
+        .subway_bt2{width:57px;height:27px; background-position:-108px -436px;}
+        .subway_bt3{width:57px;height:27px; background-position:-170px -436px;}
+        .subway_bt4{width:57px;height:27px; background-position:-231px -436px;}
+        .subway_bt5{width:57px;height:27px; background-position:-46px -470px;}
+        .advice_state1{width:10px;height:10px; background-position:-230px -471px; float: right; margin: 8px 15px 0 0;}
+        .advice_state2{width:10px;height:10px; background-position:-230px -486px; float: right; margin: 8px 15px 0 0;}
+        .advice_search_bt{width:24px;height:25px; background-position:-251px -471px; float: right; margin-right: 35px;}
+        .help_tel_logo{width:17px;height:18px; background-position:-46px -508px; position: absolute; margin: 11px 0 0 -25px;}
+        .help_mail_logo{width:17px;height:18px; background-position:-83px -508px; position: absolute; margin: 11px 0 0 -20px;}
+
+        /* header */
+        header{width:960px; }
+        header .site_top{width:960px; height: 30px; background: url("images/top_bg.png") no-repeat; overflow: hidden;}
+        header .site_top .site_top_cities{width: 400px; height: 30px; margin-left: 20px; float: left;}
+        header .site_top .site_top_cities li{width: 66px; height: 30px; line-height: 30px; float: left; font-size: 12px; color: #666666; text-align: center;}
+        header .site_top .site_top_cities .site_top_city{width: 40px; margin:-1px 3px 0 3px;}
+        header .site_top .site_top_cities .site_top_city a{color: #999999;}
+        header .site_top .site_top_cities .site_top_city a.active{color: #d60d03;}
+        header .site_top .site_top_cities .site_top_city a:hover{color: #d60d03;}
+        header .site_top .site_top_right{width: 165px; height: 30px; float: right; margin-right:30px;}
+        header .site_top .site_top_right li{height: 30px; float: left; line-height: 30px;}
+        header .site_top .site_top_right li.site_top_pipe{font-weight: 700; color: #d5d5d5;}
+        header .site_top .site_top_right li a{font-size: 12px; color: #666666; padding: 4px;}
+        header .site_top .site_top_right li a:hover{color: #d60d03;}
+        header nav{width: 960px; height: 100px; overflow: hidden;}
+        header nav .site_navs{width: 350px; height: 100px; float: left;}
+        header nav .site_navs li{width: 66px; height: 70px; float: left; text-align: center; cursor: pointer; color: #333333; }
+        header nav .site_navs li:hover{color: #d60d03;}
+        header nav .site_navs li .site_nav{width: 48px; height: 48px; margin:10px 0 0 10px;}
+        header nav .site_navs li span{font-size:12px; margin-top: -2px; display: block;}
+        header nav .site_nav_right{width: 350px; height: 100px; float: right;}
+        header nav .site_navs li .site_nav:hover{}
+        header .site_search{width: 960px; height: 116px; background: url("images/site_search_bg.png") no-repeat; position: relative;}
+        header .site_search .search_note{position: absolute; left: 32px;}
+        header .site_search .site_search_text{width: 393px; height: 22px; background: url("images/search_bg.png") no-repeat; border: none; position: absolute; left: 227px; top:37px; font-size: 12px; color: #ea7a7a; padding-left: 12px;}
+        header .site_search .site_search_bt{width:63px; height:26px; background-position:-231px -238px; border: none; position: absolute; top:37px; left: 640px; cursor:pointer;}
+        header .site_search .texts{font-size: 12px; color: #fff; position: absolute; top:30px; right: 35px;}
+        header .site_search .search_tabs{position: absolute; overflow: hidden; left:227px; top:-10px;}
+        header .site_search .search_tabs ul{width: 410px; height: 28px;}
+        header .site_search .search_tabs .search_tab{width:81px; height:28px; text-align: center; font-size:14px; color: #000; float: left; line-height: 28px; background-position:0 -318px; cursor: pointer;}
+        header .site_search .search_tabs .search_tab:hover{background-position:0 -287px; color: #fff; font-weight: 700; opacity: 0.6;}
+        header .site_search .search_tabs .search_tab.active{background-position:0 -287px; color: #fff; font-weight: 700;}
+        header .site_search .update{overflow:hidden; width: 410px; height: 20px; line-height: 20px; position: absolute; left: 227px; top: 90px;}
+        header .site_search .update ul{position: absolute; left: 55px;}
+        header .site_search .update ul li{height: 20px;}
+        header .site_search .update .update_msg{font-size:12px; float: left; margin-left: 8px;}
+        header .site_search .update .update_msg .update_name{ color: #d30703;}
+        header .site_search .update .update_msg .update_time{ color: #999999;}
+
+        /* article */
+        article{width: 960px; overflow: hidden;}
+
+        /* for main_content */
+        article .contents .div_title{overflow: hidden;}
+        article .contents .div_title .div_name{font-size: 12px; margin: 15px 0 0 15px; float: left;}
+        article .contents .div_title .div_name .div_en_name{font-size: 12px; color: #cc0d13;}
+        article .div_title .more{float: right; margin: 17px 15px 0 0;}
+        article .main_content{width: 720px; float: left;}
+        article .main_content .content_banner{width: 710px; height: 90px; float: left; margin-top: 10px;}
+        article .main_content .contents{width: 350px; background: url("images/div_topbg.png"),url("images/div_bottombg.png"),url("images/div_midbg.png"); background-position: left top,bottom center,left; background-repeat: no-repeat,no-repeat,repeat-y; float: left; margin: 10px 10px 0 0;}
+
+        /* content tab */
+        article .main_content .content_tabs{width: 350px; height: 34px; border-bottom: 1px solid #e5e5e5; background: #fff;}
+        article .main_content .content_tab{width: 174px; height: 35px; background-position:-46px -394px; float: left; text-align: center; line-height: 35px; cursor: pointer;}
+        article .main_content .content_tab.content_left_tab{margin-right: 2px;}
+        article .main_content .content_tab .tab_name{font-size: 14px;}
+        article .main_content .content_tab .tab_name .tab_en_name{font-size: 12px; color: #666666;}
+        article .main_content .content_tab.active{background-position:-46px -353px;}
+        article .main_content .content_tab.active .tab_en_name{color: #cc0d13;}
+
+        /* content_what_hot */
+        article .main_content .what_hot{height: 420px;}
+        article .main_content .what_hot h1{font-size: 18px; color: #d90000; font-family: 'Arial'; margin: 10px 0 0 16px; width: 200px;}
+        article .main_content .what_hot .video{width: 318px; height: 285px; background: url("images/video.png") no-repeat; margin:8px 0 0 16px;}
+        article .main_content .what_hot .video_msg{overflow: hidden; margin: 10px 0 0 15px;}
+        article .main_content .what_hot .video_msg ul{float: left; width: 210px; margin-left: 10px;}
+        article .main_content .what_hot .video_msg ul li {height: 20px; width: 210px; background: url("images/li_bg.png") no-repeat 0 12px; padding-left: 5px;}
+        article .main_content .what_hot .video_msg ul li a{font-size: 12px; color: #4d4d4d;}
+        article .main_content .what_hot .video_msg ul li a:hover{color: #d60d03;}
+
+        /* content_hot_shop */
+        article .main_content .hot_shop{height: 420px;}
+        article .main_content .hot_shop .hot_shop_list{width: 320px; height: 108px; background: url("images/hotshop_bg.png") no-repeat right; margin: 6px 0 0 20px; overflow: hidden; }
+        article .main_content .hot_shop .hot_shop_list .hot_shop_texts{color: #6e6e6e; float:left;font-size: 12px; width: 140px; height: 70px; margin: 10px 0 0 20px;}
+        article .main_content .hot_shop .hot_shop_list .hot_shop_photo{width:106px; height:86px; float:left; margin-top: 12px; cursor: pointer;}
+        article .main_content .hot_shop .hot_shop_list .hot_shop_photo:hover{border: 1px solid red;}
+        article .main_content .hot_shop .hot_shop_list .hot_shop_title{font-size: 12px; color: #bb0d0d; line-height: 30px;}
+        article .main_content .hot_shop .more{float: right; margin: 18px 12px 0 0;}
+
+        /* content_lucky_today */
+        article .main_content .lucky_today{height: 500px;}
+        article .main_content .lucky_today .today_topic{width:350px; height: 110px; overflow: hidden;}
+        article .main_content .lucky_today .today_photo{margin: 10px 0 0 23px;}
+        article .main_content .lucky_today .today_topic .today_topic_texts{width: 205px; height: 85px; float: right; margin: 16px 15px 0 0;}
+        article .main_content .lucky_today .today_topic .today_topic_texts .topic{font-size: 12px; color: #000; float: right; margin: 5px 22px 0 0;}
+        article .main_content .lucky_today .today_topic .today_topic_texts .texts{font-size: 12px; color: #999999;}
+        article .main_content .lucky_today .calender{width: 300px; height: 290px; margin-left: 23px; position: relative;}
+        article .main_content .lucky_today .calender .calender_date{width: 310px; height: 260px; overflow: hidden; }
+        article .main_content .lucky_today .calender .calender_date .date{width: 40px; height: 40px; background: #ededed; cursor: pointer; float: left; margin:0 3px 3px 0;}
+        article .main_content .lucky_today .calender .calender_date .date.gray{opacity: 0.4;}
+        article .main_content .lucky_today .calender .calender_date .date a{font-size:12px; color:#666666; display:block; height: 40px; width:40px; text-align: center; line-height: 40px; position: relative;}
+        article .main_content .lucky_today .calender .calender_date .date a img{position: absolute; top:0;left:0; width: 40px; height: 40px;}
+        .today_info {width:294px; height:84px; padding:10px; border:1px solid #c0c0c0; background:#fff; position:absolute; top:136px; left:288px; box-shadow:4px 4px 0 rgba(0,0,0,0.2); display: none; z-index:10;}
+        .today_info img { width:80px; height:80px; border:2px solid #dbdbdb; float:left; }
+        .today_info .text { width:200px; float:right; }
+        .today_info h4 { font-size:12px; color:#333; padding-bottom:8px; }
+        .today_info strong { color:#ccc; font-size:18px; vertical-align:middle; }
+        .today_info p {font-size:12px; color:#999; line-height:20px; }
+        .today_info span { width:8px; height:14px; overflow:hidden; position:absolute; top:45px; left:-8px; background:url(images/adorn.gif) no-repeat 0 -48px; }
+
+        /* content_recommend */
+        article .main_content .recommend{height: 500px;}
+        article .main_content .recommend .recmmend_photos{width: 318px; height: 180px; background: url("images/reconmmend_photo_bg.png") no-repeat; margin-left: 15px; overflow: hidden;}
+        article .main_content .recommend .recmmend_photos .photo_gallery{width: 300px; height: 140px; margin: 12px 0 0 12px;}
+        article .main_content .recommend .recmmend_photos .photo_gallery .showing_photo{width: 223px; height: 133px; float: left; position: relative;}
+        article .main_content .recommend .recmmend_photos .photo_gallery .showing_photo img{position: absolute;}
+        article .main_content .recommend .recmmend_photos .photo_gallery .photo_list{width: 54px; height: 30px; border: 3px solid #fff; float: left; margin: 0 0 14px 9px; cursor: pointer;}
+        article .main_content .recommend .recmmend_photos .photo_gallery .photo_list.showing{border-color: #d6191d;}
+        article .main_content .recommend .recmmend_photos .photo_gallery .photo_list img{width: 54px; height: 30px;}
+        article .main_content .recommend .recmmend_photos .photo_gallery .texts{font-size: 12px; float: left;margin-top: -10px;}
+        article .main_content .recommend .recommend_list{width: 300px; height: 210px; margin: 15px 0 0 25px;}
+        article .main_content .recommend .recommend_list .recommend{width: 300px; height: 26px; line-height: 26px;}
+        article .main_content .recommend .recommend_list .recommend .pipe{color: #dfdfdf; font-size:14px; font-weight: 500;}
+        article .main_content .recommend .recommend_list .recommend .texts{color: #454545; font-size: 12px;}
+        article .main_content .recommend .recommend_list .recommend .texts:hover{color: #d60d03;}
+        article .main_content .recommend .recommend_list .recommend .date{font-size: 7px; color: #999999; padding-left: 25px;}
+
+        /* content_subway */
+        article .main_content .subway{height: 330px;}
+        article .main_content .subway .subway_rote{width: 312px; height: 250px; margin: 25px 0 0 25px;}
+        article .main_content .map{margin-left: 15px;}
+
+        /* content_BBS */
+        article .main_content .bbs{height: 330px; overflow: hidden;}
+        article .main_content .bbs .bbs_list{width: 318px; height: 280px; margin: 10px 0 0 15px; float: left;}
+        article .main_content .bbs .bbs_list .bbs_list_content{width: 318px; height: 30px; background: url("images/bbs_li1.png") no-repeat; margin-bottom: 3px;}
+        article .main_content .bbs .bbs_list .bbs_list_content.active{width: 318px; height: 70px; background: url("images/bbs_li2.png") no-repeat;}
+
+        /* content_advice */
+        article .main_content .advice{height: 300px;}
+        article .main_content .advice .small_tabs{width: 308px; height: 26px; border-bottom: 1px solid #dadada; padding-left: 10px; margin: 15px 0 0 15px;}
+        article .main_content .advice .small_tab{cursor:pointer;width: 100px; height: 26px; float: left; font-size:12px; text-align: center; line-height: 26px; color:#666666; background-position:-108px -500px;}
+        article .main_content .advice .small_tab.active{background-position:-108px -471px;}
+        article .main_content .advice .advice_questions .questions{width: 308px; margin-left: 15px;}
+        article .main_content .advice .advice_questions .questions .qt{font-size: 12px; background: url("images/li_bg2.png") no-repeat 0 13px; padding-left: 10px; width: 308px; height: 27px; border-bottom: 1px dotted #cbcbca; line-height: 27px;}
+        article .main_content .advice .advice_questions .questions .qt a{color: #767676;}
+        article .main_content .advice .advice_questions .questions .qt .type{color: #c75d61;}
+        article .main_content .advice .advice_questions .questions .qt .texts{color: #454545;}
+        article .main_content .advice .advice_questions .questions .title{font-size: 12px; width: 318px; height: 35px; border-bottom: 1px dotted #cbcbca; line-height: 48px; color: #999999;}
+        article .main_content .advice .advice_questions .questions .title .head{padding-left: 110px;}
+        article .main_content .advice .advice_questions .questions .title .state{padding-left: 105px;}
+        article .main_content .advice .advice_search{margin:10px 0 0 27px;}
+        article .main_content .advice .advice_search #advice_search_input{width: 180px; height: 22px; color: #9c9c9c; border: none; background: url("images/advice_search.png") no-repeat; padding-left: 2px;}
+        article .main_content .advice .advice_search label{font-size:12px; color: #595959; font-weight: 700;}
+
+        /* content_hot */
+        article .main_content .hot{height: 300px;}
+        article .main_content .hot  img{display:block;}
+        article .main_content .hot .hot_photo_gallery{width: 316px; height: 238px; border: none; margin: 10px 0 0 15px;}
+        article .main_content .hot .hot_photo_gallery tr .hot_photo{cursor:pointer; width: 78px; height: 78px; position: relative;}
+        article .main_content .hot .hot_photo_gallery tr .hot_photo .texts{
+            font-size:12px; color:#fff; background:rgba(0,0,0,0.5);width: 100%; height: 78px; position: absolute;}
+
+        /* content_help */
+        article .main_content .help{height: 250px; overflow: hidden;}
+        article .main_content .help .texts{font-size: 12px; text-indent: 2em; width: 310px; margin: 20px 0 0 15px;}
+        article .main_content .help .help_tel{font-size:14px; color: #b80000; font-weight: 700; margin-left: 15px; line-height: 40px; padding-left: 25px;}
+        article .main_content .help .help_mail{font-size:12px; color: #333333; margin-left: 66px;}
+        article .main_content .help dl{width: 125px; height: 70px; float: left; margin: 15px 0 0 25px;}
+        article .main_content .help dl a{font-size: 12px; color: #292929; }
+        article .main_content .help dl a:hover{color: #bc033c;}
+        article .main_content .help dl:nth-of-type(2){margin-left: 45px;}
+        article .main_content .help dl dt{ font-size: 12px; font-weight: bold;}
+        article .main_content .help dl dd{background: url("images/li_bg2.png") no-repeat 0 6px; padding-left: 10px; margin-left: 5px;}
+
+        /* content_media */
+        article .main_content .media{height: 250px;}
+        article .main_content .media dl{width: 320px; height: 200px; margin: 20px 0 0 15px; overflow: hidden;}
+        article .main_content .media dt{float: left; margin-top: 8px; width: 88px; height: 31px;}
+        article .main_content .media dd{float: left; width: 220px; height:40px;margin-left: 8px;}
+        article .main_content .media dd:not(.first){ line-height: 40px;}
+        article .main_content .media dd a{font-size: 12px; color: #292929; line-height: 15px;}
+        article .main_content .media dd a:hover{color: #bc033c;}
+
+        /* aside */
+        article aside{width: 240px; float: left; margin-top: 10px; overflow: hidden;}
+        article aside .contents{margin-bottom: 10px; background: url("images/aside_top_bg.png"),url("images/aside_bottom_bg.png"),url("images/aside_mid_bg.png"); background-position: left top,bottom center,left; background-repeat: no-repeat,no-repeat,repeat-y;}
+        article aside .aside_banner1{width: 240px; height: 90px; margin-bottom: 10px;}
+        article aside .aside_banner2{width: 240px; height: 180px;margin-bottom: 10px;}
+
+        /* aside_load */
+        article aside .load{height: 140px; background: url("images/login_bg.png") no-repeat;}
+        article aside .load .login_msg{width: 140px; height: 45px; overflow: hidden; margin: 50px 0 0 20px; float: left;}
+        article aside .load .login_msg label{font-size:12px; color: #595959; float: left;}
+        article aside .load .login_msg label.passwords span{letter-spacing: 1em;}
+        article aside .load .login_msg label.passwords {margin-top: 2px;}
+        article aside .load .login_msg input{height: 19px; width: 89px; background: url("images/login_inputbg.png") no-repeat; border: none; float: left; margin-bottom: 7px;}
+        article aside .load .login_bt{float: right; margin: 47px 20px 0 0; width: 56px;}
+        article aside .load .login_bt #check{width: 12px; height: 12px; float: left; margin-top: 5px;}
+        article aside .load .login_bt label{font-size:12px; color: #595959; float: left; margin: 2px 0 0 3px;}
+        article aside .load .login_bt #submit{width:56px; height:26px; background-position:-231px -500px; border: none; cursor: pointer; margin-top: 5px;}
+        article aside .load ul{margin: 15px 0 0 30px; float: left;}
+        article aside .load ul li{float: left; background: url("images/li_bg2.png") no-repeat 0 12px; margin-right: 30px;}
+        article aside .load ul li a{font-size: 12px; color: #666666; padding-left: 10px;}
+        article aside .load ul li a:hover{color: #bc033c;}
+
+        /* aside_coupons */
+        article aside .coupons{height: 240px;}
+        article aside .coupons .small_tabs{width: 208px; height: 23px; border-bottom: 1px solid #dadada; padding-left: 6px; margin: 15px 0 0 15px;}
+        article aside .coupons .small_tab{cursor: pointer;width: 68px; height: 23px; float: left; font-size:12px; text-align: center; line-height: 26px; color:#666666; background-position:-156px -208px;}
+        article aside .coupons .small_tab.active{background-position:-226px -208px;}
+        article aside .coupons .coupons_shops{width: 208px; height: 170px; margin-left: 18px;}
+        article aside .coupons .coupons_shops .coupons_shop{font-size:12px; background: url("images/li_bg2.png") no-repeat 0 12px; padding-left: 8px; border-bottom: 1px dotted #cbcbca; height: 25px; line-height: 25px;}
+        article aside .coupons .coupons_shops .coupons_shop:last-of-type{border: none;}
+        article aside .coupons .coupons_shops .title{border-bottom: 1px dotted #cbcbca; font-size: 12px; color: #999999; line-height: 32px;}
+        article aside .coupons .coupons_shops .shop_name{margin-left: 45px;}
+        article aside .coupons .coupons_shops .shop_discount{margin-left: 60px;}
+        article aside .coupons .coupons_shops .shop_print{margin-left: 22px;}
+        article aside .coupons .coupons_shops .coupons_shop a{color: #333333;}
+        article aside .coupons .coupons_shops .coupons_shop a:hover{color: #bc033c;}
+        article aside .coupons .coupons_shops .coupons_shop .discount{color: #d80000; padding-left: 45px;}
+        article aside .coupons .coupons_shops .coupons_shop .print{color: #999999; padding-left: 15px;}
+
+        /* aside_shop */
+        article aside .shop{height: 420px;}
+        article aside .shop .shop_recommend{}
+        article aside .shop .shop_recommend .recommend{width: 215px; height: 85px; border-bottom:1px dotted #cbcbca; overflow: hidden; margin: 10px 0 0 15px;}
+        article aside .shop .shop_recommend .recommend .recommend_photo{float: left; margin-top: 2px;}
+        article aside .shop .shop_recommend .texts{float: left; width: 104px; height: 60px; font-size: 12px; margin: 2px 0 0 10px;}
+        article aside .shop .shop_recommend .texts .shop_name{color: #b80000;}
+        article aside .shop .shop_recommend .texts p:nth-of-type(2){margin-top: 15px;}
+        article aside .shop .shop_recommend .texts .type{color: #999999;}
+        article aside .shop .shop_recommend .texts .shop_place{color: #666666;}
+
+        /* aside_oversee_shop */
+        article aside .oversee_shop{height: 180px;}
+        article aside .oversee_shop img{margin: 10px 0 0 15px;}
+        article aside .oversee_shop .dishes{font-size: 12px; color: #333333; margin-left: 15px;}
+
+        /* aside_discount_shop */
+        article aside .discount_shop{height: 350px;}
+        article aside .discount_shop .recommend{width: 215px; height: 85px; overflow: hidden; margin: 10px 0 0 15px;}
+        article aside .discount_shop .recommend .recommend_photo{float: left; margin-top: 2px;}
+        article aside .discount_shop .texts{float: left; width: 104px; height: 60px; font-size: 12px; margin: 2px 0 0 10px;}
+        article aside .discount_shop .texts .shop_name{color: #b80000;}
+        article aside .discount_shop .texts p:nth-of-type(2){margin-top: 15px;}
+        article aside .discount_shop .texts .type{color: #999999;}
+        article aside .discount_shop .texts .shop_place{color: #666666;}
+        article aside .discount_shop .questions{width: 200px; margin-left: 15px;}
+        article aside .discount_shop .questions .qt{font-size: 12px; background: url("images/li_bg2.png") no-repeat 0 13px; padding-left: 10px; width: 200px; border-top: 1px dotted #cbcbca; line-height: 27px;}
+        article aside .discount_shop .questions .qt a{color: #767676;}
+        article aside .discount_shop .questions .qt .type{color: #c75d61;}
+        article aside .discount_shop .questions .qt .qt_texts{color: #333333;}
+
+        /* aside_new_coupons */
+        article aside .new_coupons{height: 370px;}
+        article aside .new_coupons .recommend{float:left; width: 100px; height: 135px; overflow: hidden; margin: 10px 0 0 15px;}
+        article aside .new_coupons .recommend .recommend_photo{margin-top: 2px;}
+        article aside .new_coupons .texts{width: 100px; height: 60px; font-size: 12px; margin: 2px 0 0 2px;}
+        article aside .new_coupons .texts .shop_name{color: #b80000;}
+        article aside .new_coupons .texts p:nth-of-type(2){margin-top: 5px;}
+        article aside .new_coupons .texts .type{color: #999999;}
+        article aside .new_coupons .texts .shop_place{color: #666666;}
+        article aside .new_coupons .questions{float:left; width: 200px; margin: 15px 0 0 15px;}
+        article aside .new_coupons .questions .qt{font-size: 12px; background: url("images/li_bg2.png") no-repeat 0 13px; padding-left: 10px; width: 200px; border-top: 1px dotted #cbcbca; line-height: 27px;}
+        article aside .new_coupons .questions .qt a{color: #767676;}
+        article aside .new_coupons .questions .qt .type{color: #c75d61;}
+        article aside .new_coupons .questions .qt .qt_texts{color: #333333;}
+
+        /* footer */
+        footer{width: 960px; height: 81px; background: url("images/footer_bg.png") no-repeat; margin-top: 10px; overflow: hidden; text-align: center; overflow: hidden;}
+        footer ul{width: 600px; height: 20px; margin: 20px auto;}
+        footer ul li:not(.pipe){width: 50px; height: 20px; line-height: 20px; float: left; margin: 0 10px 0 10px;}
+        footer ul li.pipe{font-weight: 700; color: #919191; float: left; line-height: 20px;}
+        footer ul li a{font-size: 12px; color: #454545;}
+        footer .copyright{font-size: 12px; color: #767676; margin-top: -10px;}
+    </style>
+    <script src="script/jquery-1.11.0.min.js"></script>
+    <script src="script/100du.js"></script>
+    <script src="script/tween.js"></script>
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="js/DD_belatedPNG_0.0.8a.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('*');
+        //DD_belatedPNG.fix('img,.nav_1');
+    </script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="site_top">
+                <ul class="site_top_cities">
+                    <li><span>切换城市：</span></li>
+                    <li class="site_top_city"><a href="##" class="active">北京</a></li>
+                    <li class="site_top_city"><a href="##">上海</a></li>
+                    <li class="site_top_city"><a href="##">福州</a></li>
+                    <li class="site_top_city"><a href="##">广州</a></li>
+                    <li class="site_top_city"><a href="##">青岛</a></li>
+                </ul>
+                <ul class="site_top_right">
+                    <li><img src="images/transparent.png" class="spirit top_right_logo1" alt="加盟100度logo"></li>
+                    <li><a href="##">加盟100度</a></li>
+                    <li class="site_top_pipe">|</li>
+                    <li><img src="images/transparent.png" class="spirit top_right_logo2" alt="店铺管理logo"></li>
+                    <li><a href="##">店铺管理</a></li>
+                </ul>
+            </div>
+            <nav>
+                <ul class="site_navs">
+                    <li>
+                        <div class="spirit site_nav site_nav1"></div>
+                        <span>美食</span>
+                    </li>
+                    <li>
+                        <div class="spirit site_nav site_nav2"></div>
+                        <span>夜店</span>
+                    </li> <li>
+                        <div class="spirit site_nav site_nav3"></div>
+                        <span>购物</span>
+                    </li> <li>
+                        <div class="spirit site_nav site_nav4"></div>
+                        <span>文化</span>
+                    </li> <li>
+                        <div class="spirit site_nav site_nav5"></div>
+                        <span>休闲</span>
+                    </li>
+                </ul>
+                <div class="site_logo spirit">
+                    
+                </div>
+                <ul class="site_nav_right site_navs">
+                    <li>
+                        <div class="spirit site_nav site_nav6"></div>
+                        <span>烧客空间</span>
+                    </li>
+                    <li>
+                        <div class="spirit site_nav site_nav7"></div>
+                        <span>知道分子</span>
+                    </li>
+                    <li>
+                        <div class="spirit site_nav site_nav8"></div>
+                        <span>白吃白拿</span>
+                    </li>
+                    <li>
+                         <div class="spirit site_nav site_nav9"></div>
+                         <span>烧客论坛</span>
+                    </li>
+                    <li>
+                         <div class="spirit site_nav site_nav10"></div>
+                         <span>企业俱乐部</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="site_search">
+                <div class="search_tabs">
+                    <ul>
+                        <li class="search_tab spirit active">
+                            搜店
+                        </li>
+                        <li class="search_tab spirit">
+                            地址
+                        </li>
+                        <li class="search_tab spirit">
+                            优惠券
+                        </li>
+                        <li class="search_tab spirit">
+                            全文
+                        </li>
+                        <li class="search_tab spirit">
+                            视频
+                        </li>
+                    </ul>
+                </div>
+                <img class="search_note" src="images/search_note.png" alt="搜索标签" />
+                <input type="text" id="site_search_text" class="site_search_text" placeholder="例如：111111111111 或 樱花日本料理"/>
+                <input type="submit" id="site_search_bt" class="site_search_bt spirit" value=""/>
+                <div class="texts">
+                    <p>
+                        金钱豹、大江南、湘水之珠、德瑀楼
+                    </p>
+                    <p>
+                        荷棠鱼坊烤鱼、SOHO尚都、湘味楼...
+                    </p>
+                </div>
+                <div class="update">
+                    <img src="images/transparent.png" class="spirit update_img" alt="更新动态" />
+                    <ul>
+
+                    </ul>
+                    <span class="arrow_up spirit"></span>
+                    <span class="arrow_down spirit"></span>
+                </div>
+            </div>
+        </header>
+        <article>
+            <div class="main_content">
+                <div class="what_hot contents">
+                    <h1>
+                        <span>WHAT'HOT</span>
+                        <img src="images/transparent.png" class="spirit video_img" alt="video_img" />
+                    </h1>
+                    <div class="video">
+
+                    </div>
+                    <div class="video_msg">
+                        <img src="images/transparent.png" class="spirit video_hot_log" alt="video_hot_logo" />
+                        <ul>
+                            <li>
+                                <a href="##">现场实录：杭州机场国航系统的崩溃</a>
+                            </li>
+                            <li>
+                                <a href="##">网友自拍国航航班晚点后的遭遇</a>
+                            </li>
+                            <li>
+                                <a href="##">【拍客】绝对最奢侈的航班 注意第41秒</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hot_shop contents">
+                    <ul class="content_tabs content_tab1">
+                        <li class="content_tab spirit content_left_tab active">
+                            <h4 class="tab_name"><span class="tab_en_name">HOT SHOP </span>红店铺</h4>
+                        </li>
+                        <li class="content_tab spirit">
+                            <h4 class="tab_name"><span class="tab_en_name">EW SHOP </span>新开张</h4>
+                        </li>
+                    </ul>
+                    <div class="tab_con1">
+                        <div class="hot_shop_list">
+                            <img class="hot_shop_photo" src="images/hotshop_photo.png" alt="hotshop_photo" />
+                            <div class="hot_shop_texts">
+                                <h5 class="hot_shop_title">御舟和涵珍园国际酒店</h5>
+                                <p>区域：朝阳/CBD</p>
+                                <p>人均：180元</p>
+                                <p>人气：12321</p>
+                            </div>
+                        </div>
+                        <div class="hot_shop_list">
+                            <img class="hot_shop_photo" src="images/hotshop_photo.png" alt="hotshop_photo" />
+                            <div class="hot_shop_texts">
+                                <h5 class="hot_shop_title">御舟和涵珍园国际酒店</h5>
+                                <p>区域：朝阳/CBD</p>
+                                <p>人均：180元</p>
+                                <p>人气：12321</p>
+                            </div>
+                        </div>
+                        <div class="hot_shop_list">
+                            <img class="hot_shop_photo" src="images/hotshop_photo.png" alt="hotshop_photo" />
+                            <div class="hot_shop_texts">
+                                <h5 class="hot_shop_title">御舟和涵珍园国际酒店</h5>
+                                <p>区域：朝阳/CBD</p>
+                                <p>人均：180元</p>
+                                <p>人气：12321</p>
+                            </div>
+                        </div>
+                        <a href="##"><img src="images/transparent.png" class="spirit more" alt="more" /></a>
+                    </div>
+                    <div class="tab_con1">
+                        <div class="hot_shop_list">
+                            <img class="hot_shop_photo" src="images/shop_photo3.png" alt="hotshop_photo" />
+                            <div class="hot_shop_texts">
+                                <h5 class="hot_shop_title">御舟和涵珍园国际酒店</h5>
+                                <p>区域：朝阳/CBD</p>
+                                <p>人均：180元</p>
+                                <p>人气：12321</p>
+                            </div>
+                        </div>
+                        <div class="hot_shop_list">
+                            <img class="hot_shop_photo" src="images/shop_photo3.png" alt="hotshop_photo" />
+                            <div class="hot_shop_texts">
+                                <h5 class="hot_shop_title">御舟和涵珍园国际酒店</h5>
+                                <p>区域：朝阳/CBD</p>
+                                <p>人均：180元</p>
+                                <p>人气：12321</p>
+                            </div>
+                        </div>
+                        <div class="hot_shop_list">
+                            <img class="hot_shop_photo" src="images/shop_photo3.png" alt="hotshop_photo" />
+                            <div class="hot_shop_texts">
+                                <h5 class="hot_shop_title">御舟和涵珍园国际酒店</h5>
+                                <p>区域：朝阳/CBD</p>
+                                <p>人均：180元</p>
+                                <p>人气：12321</p>
+                            </div>
+                        </div>
+                        <a href="##"><img src="images/transparent.png" class="spirit more" alt="more" /></a>
+                    </div>
+                </div>
+                <div class="content_banner">
+                    <a href="##"><img src="images/banner.png" alt="xx" /></a>
+                </div>
+                <div class="lucky_today contents">
+                    <img src="images/luckyday_top.png" alt="luckyday_top" />
+                    <div class="today_topic">
+                        <img class="today_photo" src="images/luckyday_photo.png" alt="luckyday_photo" />
+                        <div class="today_topic_texts">
+                            <img src="images/transparent.png" class="spirit today_topic_date1" alt="date" />
+                            <img src="images/transparent.png" class="spirit today_topic_date2" alt="date" />
+                            <h5 class="topic">本日主题XXXXXXXX</h5>
+                            <p class="texts">
+                                迟到的荣誉——维米尔的写实主义风俗画迟到的荣誉维米尔画迟到的荣誉维米尔米尔米尔
+                            </p>
+                        </div>
+                    </div>
+                    <div class="calender">
+                        <img src="images/calender_top.png" alt="calender_header" />
+                        <ul class="calender_date">
+                            <li class="date gray"><a href="##">29</a></li>
+                            <li class="date gray"><a href="##">30</a></li>
+                            <li class="date"><a href="##">1</a></li>
+                            <li class="date"><a href="##">2</a></li>
+                            <li class="date"><a href="##">3</a></li>
+                            <li class="date imgdate"><a href="##">4<img class="img" info="帅哥是谁？陪谁去过情人节？" src="images/hot_photo10.png" alt="xx" /></a></li>
+                            <li class="date"><a href="##">5</a></li>
+                            <li class="date"><a href="##">6</a></li>
+                            <li class="date"><a href="##">7</a></li>
+                            <li class="date"><a href="##">8</a></li>
+                            <li class="date"><a href="##">9</a></li>
+                            <li class="date"><a href="##">10</a></li>
+                            <li class="date"><a href="##">11</a></li>
+                            <li class="date"><a href="##">12</a></li>
+                            <li class="date imgdate"><a href="##">13<img class="img" info="气质美女，陪谁去过明天的情人节？" src="images/hot_photo6.png" alt="xx" /></a></li>
+                            <li class="date"><a href="##">14</a></li>
+                            <li class="date"><a href="##">15</a></li>
+                            <li class="date"><a href="##">16</a></li>
+                            <li class="date"><a href="##">17</a></li>
+                            <li class="date"><a href="##">18</a></li>
+                            <li class="date"><a href="##">19</a></li>
+                            <li class="date"><a href="##">20</a></li>
+                            <li class="date"><a href="##">21</a></li>
+                            <li class="date"><a href="##">22</a></li>
+                            <li class="date imgdate"><a href="##">23<img class="img" info="这似乎是海参配燕窝，好味道~" src="images/hot_photo8.png" alt="xx" /></a></li>
+                            <li class="date"><a href="##">24</a></li>
+                            <li class="date imgdate"><a href="##">25<img class="img" info="2333333333333333333~" src="images/hot_photo1.png" alt="xx" /></a></li>
+                            <li class="date"><a href="##">26</a></li>
+                            <li class="date"><a href="##">27</a></li>
+                            <li class="date"><a href="##">28</a></li>
+                            <li class="date imgdate"><a href="##">29<img class="img" info="迟到的荣誉——啦啦啦，现在还写电商网站，呃好吧，没词儿了~~" src="images/hot_photo3.png" alt="xx" /></a></li>
+                            <li class="date"><a href="##">30</a></li>
+                            <li class="date"><a href="##">31</a></li>
+                            <li class="date"><a href="##">1</a></li>
+                            <li class="date"><a href="##">2</a></li>
+                            <li class="date gray"><a href="##">3</a></li>
+                            <li class="date gray"><a href="##">4</a></li>
+                            <li class="date gray"><a href="##">5</a></li>
+                            <li class="date gray"><a href="##">6</a></li>
+                            <li class="date gray"><a href="##">7</a></li>
+                            <li class="date gray"><a href="##">8</a></li>
+                            <li class="date gray"><a href="##">9</a></li>
+                        </ul>
+                        <div class="today_info">
+                            <img src="img/content/today2.gif" alt="" />
+                            <div class="text">
+                                <h4><strong>SAT</strong> 本日主题</h4>
+                                <p>迟到的荣誉——啦啦啦，现在还写电商网站，呃好吧，没词儿了~~</p>
+                            </div>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend contents">
+                    <img src="images/reconmmend_top.png" alt="reconmmend_top" />
+                    <div class="recmmend_photos">
+                        <dl class="photo_gallery">
+                            <dt class="showing_photo">
+                                <img src="images/reconmmend_photo1.gif" alt="photo1" />
+                                <img src="images/reconmmend_photo2.gif" alt="photo1" />
+                                <img src="images/reconmmend_photo3.gif" alt="photo1" />
+                            </dt>
+                            <dd class="photo_list showing">
+                                <img src="images/reconmmend_photo1.gif" alt="photo1" />
+                            </dd>
+                            <dd class="photo_list">
+                                <img src="images/reconmmend_photo2.gif" alt="photo1" />
+                            </dd>
+                            <dd class="photo_list">
+                                <img src="images/reconmmend_photo3.gif" alt="photo1" />
+                            </dd>
+                            <dd>
+                                <span class="texts">爸爸去哪儿~</span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <ul class="recommend_list clear">
+                        <li class="recommend">
+                            <a href="##">
+                                <img src="images/transparent.png" class="spirit recommend_list_logo1" alt="xxx" />
+                                <span class="pipe">|</span>
+                                <span class="texts">老板换新颜，丰泽园野田重张亮相...</span>
+                                <span class="date">08/07/22</span>
+                            </a>
+                        </li>
+                        <li class="recommend">
+                            <a href="##">
+                                <img src="images/transparent.png" class="spirit recommend_list_logo2" alt="xxx" />
+                                <span class="pipe">|</span>
+                                <span class="texts">老板换新颜，丰泽园野田重张亮相...</span>
+                                <span class="date">08/07/22</span>
+                            </a>
+                        </li>
+                        <li class="recommend">
+                            <a href="##">
+                                <img src="images/transparent.png" class="spirit recommend_list_logo1" alt="xxx" />
+                                <span class="pipe">|</span>
+                                <span class="texts">老板换新颜，丰泽园野田重张亮相...</span>
+                                <span class="date">08/07/22</span>
+                            </a>
+                        </li>
+                        <li class="recommend">
+                            <a href="##">
+                                <img src="images/transparent.png" class="spirit recommend_list_logo2" alt="xxx" />
+                                <span class="pipe">|</span>
+                                <span class="texts">老板换新颜，丰泽园野田重张亮相...</span>
+                                <span class="date">08/07/22</span>
+                            </a>
+                        </li>
+                        <li class="recommend">
+                            <a href="##">
+                                <img src="images/transparent.png" class="spirit recommend_list_logo1" alt="xxx" />
+                                <span class="pipe">|</span>
+                                <span class="texts">老板换新颜，丰泽园野田重张亮相...</span>
+                                <span class="date">08/07/22</span>
+                            </a>
+                        </li>
+                        <li class="recommend">
+                            <a href="##">
+                                <img src="images/transparent.png" class="spirit recommend_list_logo2" alt="xxx" />
+                                <span class="pipe">|</span>
+                                <span class="texts">老板换新颜，丰泽园野田重张亮相...</span>
+                                <span class="date">08/07/22</span>
+                            </a>
+                        </li>
+                        <li class="recommend">
+                            <a href="##">
+                                <img src="images/transparent.png" class="spirit recommend_list_logo1" alt="xxx" />
+                                <span class="pipe">|</span>
+                                <span class="texts">老板换新颜，丰泽园野田重张亮相...</span>
+                                <span class="date">08/07/22</span>
+                            </a>
+                        </li>
+                        <li class="recommend">
+                            <a href="##">
+                                <img src="images/transparent.png" class="spirit recommend_list_logo1" alt="xxx" />
+                                <span class="pipe">|</span>
+                                <span class="texts">老板换新颜，丰泽园野田重张亮相...</span>
+                                <span class="date">08/07/22</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subway contents">
+                    <ul class="content_tabs content_tab2">
+                        <li class="content_tab spirit content_left_tab active">
+                            <h4 class="tab_name"><span class="tab_en_name">SUBWAY </span>地铁交通</h4>
+                        </li>
+                        <li class="content_tab spirit">
+                            <h4 class="tab_name"><span class="tab_en_name">MAP </span>生活圈</h4>
+                        </li>
+                    </ul>
+                    <div class="subway_rote tab_con2">
+                        <img src="images/subway_photo.png" alt="xx" />
+                        <a href="##">
+                            <img src="images/transparent.png" class="spirit subway_bt1" alt="xx">
+                        </a>
+                        <a href="##">
+                            <img src="images/transparent.png" class="spirit subway_bt2" alt="xx">
+                        </a>
+                        <a href="##">
+                            <img src="images/transparent.png" class="spirit subway_bt3" alt="xx">
+                        </a>
+                        <a href="##">
+                            <img src="images/transparent.png" class="spirit subway_bt4" alt="xx">
+                        </a>
+                        <a href="##">
+                            <img src="images/transparent.png" class="spirit subway_bt5" alt="xx">
+                        </a>
+                    </div>
+                    <div class="tab_con2 map">
+                        <img width="314" height="230" src="images/map.jpg" alt="xx" />
+                    </div>
+                </div>
+                <div class="bbs contents">
+                    <div class="div_title">
+                        <h4 class="div_name"><span class="div_en_name">BBS </span>论坛</h4>
+                        <a href="##"><img src="images/transparent.png" alt="xx" class="spirit more" /></a>
+                    </div>
+                    <ul class="bbs_list clear">
+                        <li class="bbs_list_content active">
+                            <a href="##">
+                            </a>
+                        </li>
+                        <li class="bbs_list_content">
+                            <a href="##">
+                            </a>
+                        </li>
+                        <li class="bbs_list_content">
+                            <a href="##">
+                            </a>
+                        </li>
+                        <li class="bbs_list_content">
+                            <a href="##">
+                            </a>
+                        </li>
+                        <li class="bbs_list_content">
+                            <a href="##">
+                            </a>
+                        </li>
+                        <li class="bbs_list_content">
+                            <a href="##">
+                            </a>
+                        </li>
+                        <li class="bbs_list_content">
+                            <a href="##">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content_banner">
+                    <a href="##"><img src="images/banner.png" alt="xx" /></a>
+                </div>
+                <div class="advice contents">
+                    <div class="div_title">
+                        <h4 class="div_name"><span class="div_en_name">LIFESTYLE ADVICE </span>知道分子</h4>
+                        <a href="##"><img src="images/transparent.png" alt="xx" class="spirit more" /></a>
+                    </div>
+                    <ul class="small_tabs small_tab1">
+                        <li class="small_tab spirit active">
+                            <span>有人在问</span>
+                        </li>
+                        <li class="small_tab spirit">
+                            <span>有人知道</span>
+                        </li>
+                        <li class="small_tab spirit">
+                            <span>热门问题</span>
+                        </li>
+                    </ul>
+                    <div class="advice_questions tab_con3">
+                        <ul class="questions">
+                            <li class="title">
+                                <span class="head">标 题</span>
+                                <span class="state">状态</span>
+                            </li>
+                            <li class="qt">
+                                <a href="##">[<span class="type">美食</span>]</a>
+                                <a href="##" class="texts">推荐几款性价比比较好的冰箱...</a>
+                                <img src="images/transparent.png" alt="xx" class="spirit advice_state1"/>
+                            </li>
+                            <li class="qt">
+                                <a href="##">[<span class="type">购物</span>]</a>
+                                <a href="##" class="texts">生活中哪些商品的包装有缺陷</a>
+                                <img src="images/transparent.png" alt="xx" class="spirit advice_state2"/>
+                            </li>
+                            <li class="qt">
+                                <a href="##">[<span class="type">休闲</span>]</a>
+                                <a href="##" class="texts">为什么我第一次进入保姆和宠物</a>
+                                <img src="images/transparent.png" alt="xx" class="spirit advice_state1"/>
+                            </li>
+                            <li class="qt">
+                                <a href="##">[<span class="type">美食</span>]</a>
+                                <a href="##" class="texts">推荐几款性价比比较好的冰箱...</a>
+                                <img src="images/transparent.png" alt="xx" class="spirit advice_state2"/>
+                            </li>
+                            <li class="qt">
+                                <a href="##">[<span class="type">购物</span>]</a>
+                                <a href="##" class="texts">生活中哪些商品的包装有缺陷</a>
+                                <img src="images/transparent.png" alt="xx" class="spirit advice_state2"/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="advice_questions tab_con3">
+                        <ul class="questions">
+                            <li class="title">
+                                <span class="head">标 题</span>
+                                <span class="state">状态</span>
+                            </li>
+                            <li class="qt">
+                                <a href="##">[<span class="type">购物</span>]</a>
+                                <a href="##" class="texts">生活中哪些商品的包装有缺陷</a>
+                                <img src="images/transparent.png" alt="xx" class="spirit advice_state1"/>
+                            </li>
+                            <li class="qt">
+                              <a href="##">[<span class="type">美食</span>]</a>
+                              <a href="##" class="texts">推荐几款性价比比较好的冰箱...</a>
+                              <img src="images/transparent.png" alt="xx" class="spirit advice_state2"/>
+                             </li>
+                            <li class="qt">
+                                <a href="##">[<span class="type">休闲</span>]</a>
+                                <a href="##" class="texts">为什么我第一次进入保姆和宠物</a>
+                                <img src="images/transparent.png" alt="xx" class="spirit advice_state2"/>
+                            </li>
+                            <li class="qt">
+                                <a href="##">[<span class="type">购物</span>]</a>
+                                <a href="##" class="texts">生活中哪些商品的包装有缺陷</a>
+                                <img src="images/transparent.png" alt="xx" class="spirit advice_state1"/>
+                            </li>
+                            <li class="qt">
+                                <a href="##">[<span class="type">美食</span>]</a>
+                                <a href="##" class="texts">推荐几款性价比比较好的冰箱...</a>
+                                <img src="images/transparent.png" alt="xx" class="spirit advice_state1"/>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="advice_questions tab_con3">
+                        <ul class="questions">
+                            <li class="title">
+                                <span class="head">标 题</span>
+                                <span class="state">状态</span>
+                            </li>
+                            <li class="qt">
+                                <a href="##">[<span class="type">美食</span>]</a>
+                                <a href="##" class="texts">推荐几款性价比比较好的冰箱...</a>
+                                <img src="images/transparent.png" alt="xx" class="spirit advice_state2"/>
+                            </li>
+                            <li class="qt">
+                                <a href="##">[<span class="type">购物</span>]</a>
+                                <a href="##" class="texts">生活中哪些商品的包装有缺陷</a>
+                                <img src="images/transparent.png" alt="xx" class="spirit advice_state2"/>
+                            </li>
+                            <li class="qt">
+                                <a href="##">[<span class="type">购物</span>]</a>
+                                <a href="##" class="texts">生活中哪些商品的包装有缺陷</a>
+                                <img src="images/transparent.png" alt="xx" class="spirit advice_state1"/>
+                            </li>
+                            <li class="qt">
+                                <a href="##">[<span class="type">休闲</span>]</a>
+                                <a href="##" class="texts">为什么我第一次进入保姆和宠物</a>
+                                <img src="images/transparent.png" alt="xx" class="spirit advice_state2"/>
+                            </li>
+                            <li class="qt">
+                                <a href="##">[<span class="type">美食</span>]</a>
+                                <a href="##" class="texts">推荐几款性价比比较好的冰箱...</a>
+                                <img src="images/transparent.png" alt="xx" class="spirit advice_state1"/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="advice_search">
+                        <label for="advice_search_input">搜搜谁知道：</label>
+                        <input type="text" placeholder="输入关键字" value="" id="advice_search_input"/>
+                        <a href="##">
+                            <img src="images/transparent.png" class='spirit advice_search_bt' alt="xx" />
+                        </a>
+                    </div>
+                </div>
+                <div class="hot contents">
+                    <div class="div_title">
+                        <h4 class="div_name"><span class="div_en_name">HOT </span>红人烧客</h4>
+                        <a href="##"><img src="images/transparent.png" alt="xx" class="spirit more" /></a>
+                    </div>
+                    <table cellpadding="0" cellspacing="0" class="hot_photo_gallery clear">
+                        <tbody>
+                            <tr>
+                                <td class="hot_photo">
+                                    <img src="images/hot_bg.png" alt="hot_photo" />
+                                </td>
+                                <td class="hot_photo">
+                                    <img src="images/hot_photo1.png" alt="hot_photo" />
+                                </td>
+                                <td class="hot_photo" colspan="2">                              
+                                    <img src="images/hot_photo2.png" alt="hot_photo" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="hot_photo">
+                                    <img src="images/hot_photo3.png" alt="hot_photo" />
+                                </td>
+                                <td class="hot_photo">
+                                    <img src="images/hot_photo4.png" alt="hot_photo" />
+                                </td>
+                                <td class="hot_photo">
+                                    <img src="images/hot_photo5.png" alt="hot_photo" />
+                                </td>
+                                <td class="hot_photo">
+                                    <img src="images/hot_photo6.png" alt="hot_photo" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="hot_photo">
+                                    <img src="images/hot_photo7.png" alt="hot_photo" />
+                                </td>
+                                <td class="hot_photo">
+                                    <img src="images/hot_photo8.png" alt="hot_photo" />
+                                </td>
+                                <td class="hot_photo">
+                                    <img src="images/hot_photo9.png" alt="hot_photo" />
+                                </td>
+                                <td class="hot_photo">
+                                    <img src="images/hot_photo10.png" alt="hot_photo" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="help contents">
+                    <div class="div_title">
+                        <h4 class="div_name"><span class="div_en_name">HELP </span>在线帮助</h4>
+                    </div>
+                    <p class="texts">
+                        您有任何问题，都可以通过全国免费电话，或MSN在线客服与我们联系！
+                    </p>
+                    <p>
+                        <span class="help_tel">
+                            <img src="images/transparent.png" class="spirit help_tel_logo" alt="xx" />
+                            4006-100-516
+                        </span>
+                        <span class="help_mail">
+                            <img src="images/transparent.png" class="spirit help_mail_logo" alt="xx" />
+                            100du.com@live.cn
+                        </span>
+                    </p>
+                    <img src="images/help_bg.png" alt="xx" />
+                    <dl>
+                        <dt>用户帮助</dt>
+                        <a href="##"><dd>金币是什么</dd></a>
+                        <a href="##"><dd>怎么样查看我的等级</dd></a>
+                        <a href="##"><dd>怎么赚积分</dd></a>
+                    </dl>
+                    <dl>
+                        <dt>商户帮助</dt>
+                        <a href="##"><dd>如何成为明星商户</dd></a>
+                        <a href="##"><dd>邮件推广</dd></a>
+                        <a href="##"><dd>论坛推广方法</dd></a>
+                    </dl>
+                </div>
+                <div class="media contents">
+                    <div class="div_title">
+                        <h4 class="div_name"><span class="div_en_name">100DU IN THE MEDIA </span>媒体声音</h4>
+                        <a href="##"><img src="images/transparent.png" alt="xx" class="spirit more" /></a>
+                    </div>
+                    <dl>
+                        <dt>
+                            <a href="##">
+                                <img src="images/media1.png" alt="xx" />
+                            </a>
+                        </dt>
+                        <dd class="first">
+                            <a href="##">日本最大的财经杂志《钻石周刊》对100度享乐网的报道</a>
+                        </dd>
+                        <dt>
+                            <a href="##">
+                                <img src="images/media2.png" alt="xx" />
+                            </a>
+                        </dt>
+                        <dd>
+                            <a href="##">视频网站100度享乐网获网络视听许可证</a>
+                        </dd>
+                        <dt>
+                            <a href="##">
+                                <img src="images/media3.png" alt="xx" />
+                            </a>
+                        </dt>
+                        <dd>
+                            <a href="##">互联网上的视频橱窗</a>
+                        </dd>
+                        <dt>
+                            <a href="##">
+                                <img src="images/media4.png" alt="xx" />
+                            </a>
+                        </dt>
+                        <dd>
+                            <a href="##">享乐主义的机会</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <aside>
+                <div class="load contents">
+                    <form method="get" action="">
+                        <div class="login_msg">
+                            <label for="username">用户名：</label>
+                            <input type="text" id="username">
+                            <label for="password" class="passwords"><span>密</span>码：</label>
+                            <input type="password" id="password">
+                        </div>
+                        <div class="login_bt">
+                            <input type="checkbox" id="check">
+                            <label for="check">记住我</label>
+                            <input type="submit" id="submit" class="spirit" value="">
+                        </div>
+                    </form>
+                    <ul>
+                        <li><a href="##">新用户注册</a></li>
+                        <li><a href="##">忘记密码了</a></li>
+                    </ul>
+                </div>
+                <div class="aside_banner1">
+                    <a href="##"><img src="images/login_banner1.png" alt="xx" /></a>
+                </div>
+                <div class="aside_banner2">
+                    <a href="##"><img src="images/login_banner2.png" alt="xx" /></a>
+                </div>
+                <div class="contents coupons">
+                    <div class="div_title">
+                        <h4 class="div_name"><span class="div_en_name">COUPONS </span>抢卷儿</h4>
+                        <a href="##"><img src="images/transparent.png" alt="xx" class="spirit more" /></a>
+                    </div>
+                    <ul class="small_tabs small_tab2">
+                        <li class="small_tab spirit active">
+                            <span>人气</span>
+                        </li>
+                        <li class="small_tab spirit">
+                            <span>推荐</span>
+                        </li>
+                        <li class="small_tab spirit">
+                            <span>最新</span>
+                        </li>
+                    </ul>
+                    <div class="coupons_shops tab_con4">
+                        <ul class="shops">
+                            <li class="title">
+                                <span class="shop_name">商店名</span>
+                                <span class="shop_discount">省</span>
+                                <span class="shop_print">打印</span>
+                            </li>
+                            <li class="coupons_shop">
+                                <a href="##" class="texts">老北京一尊皇牛</a>
+                                <span class="discount">12%</span>
+                                <span class="print">345</span>
+                            </li>
+                            <li class="coupons_shop">
+                                <a href="##" class="texts">老北京一尊皇牛</a>
+                                <span class="discount">12%</span>
+                                <span class="print">345</span>
+                            </li>
+                            <li class="coupons_shop">
+                                <a href="##" class="texts">老北京一尊皇牛</a>
+                                <span class="discount">12%</span>
+                                <span class="print">345</span>
+                            </li>
+                            <li class="coupons_shop">
+                                <a href="##" class="texts">老北京一尊皇牛</a>
+                                <span class="discount">12%</span>
+                                <span class="print">345</span>
+                            </li>
+                            <li class="coupons_shop">
+                                <a href="##" class="texts">老北京一尊皇牛</a>
+                                <span class="discount">12%</span>
+                                <span class="print">345</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="coupons_shops tab_con4">
+                        <ul class="shops">
+                            <li class="title">
+                                <span class="shop_name">商店名</span>
+                                <span class="shop_discount">省</span>
+                                <span class="shop_print">打印</span>
+                            </li>
+                            <li class="coupons_shop">
+                                <a href="##" class="texts">享乐主义的机会</a>
+                                <span class="discount">13%</span>
+                                <span class="print">35</span>
+                            </li>
+                            <li class="coupons_shop">
+                                <a href="##" class="texts">享乐主义的机会</a>
+                                <span class="discount">13%</span>
+                                <span class="print">35</span>
+                            </li>
+                            <li class="coupons_shop">
+                                <a href="##" class="texts">享乐主义的机会</a>
+                                <span class="discount">13%</span>
+                                <span class="print">45</span>
+                            </li>
+                            <li class="coupons_shop">
+                                <a href="##" class="texts">享乐主义的机会</a>
+                                <span class="discount">13%</span>
+                                <span class="print">35</span>
+                            </li>
+                            <li class="coupons_shop">
+                                <a href="##" class="texts">享乐主义的机会</a>
+                                <span class="discount">15%</span>
+                                <span class="print">35</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="coupons_shops tab_con4">
+                        <ul class="shops">
+                            <li class="title">
+                                <span class="shop_name">商店名</span>
+                                <span class="shop_discount">省</span>
+                                <span class="shop_print">打印</span>
+                            </li>
+                            <li class="coupons_shop">
+                                <a href="##" class="texts">互联网上的视橱</a>
+                                <span class="discount">22%</span>
+                                <span class="print">134</span>
+                            </li>
+                            <li class="coupons_shop">
+                                <a href="##" class="texts">互联网上的视橱</a>
+                                <span class="discount">22%</span>
+                                <span class="print">314</span>
+                            </li>
+                            <li class="coupons_shop">
+                                <a href="##" class="texts">互联网上的视频</a>
+                                <span class="discount">22%</span>
+                                <span class="print">324</span>
+                            </li>
+                            <li class="coupons_shop">
+                                <a href="##" class="texts">互联网上的视橱</a>
+                                <span class="discount">22%</span>
+                                <span class="print">335</span>
+                            </li>
+                            <li class="coupons_shop">
+                                <a href="##" class="texts">互联网上的视窗</a>
+                                <span class="discount">22%</span>
+                                <span class="print">345</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contents shop">
+                    <div class="div_title">
+                        <h4 class="div_name"><span class="div_en_name">SHOP </span>今日推荐</h4>
+                        <a href="##"><img src="images/transparent.png" alt="xx" class="spirit more" /></a>
+                    </div>
+                    <ul class="shop_recommend">
+                        <li class="recommend">
+                            <a href="##">
+                                <img class="recommend_photo" src="images/shop_photo.png" alt="xx"/>
+                            </a>
+                            <div class="texts">
+                                <p class="shop_name">汉莱国际美食百汇</p>
+                                <p>
+                                    <span class="type">口味：</span>
+                                    <span class="shop_place">创意中餐</span>
+                                </p>
+                                <p>
+                                    <span class="type">区域：</span>
+                                    <span class="shop_place">朝阳/ABC</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="recommend">
+                            <a href="##">
+                                <img class="recommend_photo" src="images/shop_photo.png" alt="xx"/>
+                            </a>
+                            <div class="texts">
+                                <p class="shop_name">汉莱国际美食百汇</p>
+                                <p>
+                                    <span class="type">口味：</span>
+                                    <span class="shop_place">创意中餐</span>
+                                </p>
+                                <p>
+                                    <span class="type">区域：</span>
+                                    <span class="shop_place">朝阳/ABC</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="recommend">
+                            <a href="##">
+                                <img class="recommend_photo" src="images/shop_photo.png" alt="xx"/>
+                            </a>
+                            <div class="texts">
+                                <p class="shop_name">汉莱国际美食百汇</p>
+                                <p>
+                                    <span class="type">口味：</span>
+                                    <span class="shop_place">创意中餐</span>
+                                </p>
+                                <p>
+                                    <span class="type">区域：</span>
+                                    <span class="shop_place">朝阳/ABC</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="recommend">
+                            <a href="##">
+                                <img class="recommend_photo" src="images/shop_photo.png" alt="xx"/>
+                            </a>
+                            <div class="texts">
+                                <p class="shop_name">汉莱国际美食百汇</p>
+                                <p>
+                                    <span class="type">口味：</span>
+                                    <span class="shop_place">创意中餐</span>
+                                </p>
+                                <p>
+                                    <span class="type">区域：</span>
+                                    <span class="shop_place">朝阳/ABC</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contents oversee_shop">
+                    <div class="div_title">
+                        <h4 class="div_name"><span class="div_en_name">360°SHOP </span>全景逛店</h4>
+                        <a href="##"><img src="images/transparent.png" alt="xx" class="spirit more" /></a>
+                    </div>
+                    <img src="images/shop_photo2.png" alt="xx" />
+                    <span class="dishes">苹果雪梨排骨汤</span>
+                </div>
+                <div class="contents discount_shop">
+                    <div class="div_title">
+                        <h4 class="div_name"><span class="div_en_name">SHOP </span>折扣店</h4>
+                        <a href="##"><img src="images/transparent.png" alt="xx" class="spirit more" /></a>
+                    </div>
+                    <ul class="shop_recommend">
+                        <li class="recommend">
+                            <a href="##">
+                                <img class="recommend_photo" src="images/shop_photo.png" alt="xx"/>
+                            </a>
+                            <div class="texts">
+                                <p class="shop_name">汉莱国际美食百汇</p>
+                                <p>
+                                    <span class="type">口味：</span>
+                                    <span class="shop_place">创意中餐</span>
+                                </p>
+                                <p>
+                                    <span class="type">区域：</span>
+                                    <span class="shop_place">朝阳/ABC</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="questions clear">
+                        <li class="qt">
+                            <a href="##">[<span class="type">美食</span>]</a>
+                            <a href="##" class="qt_texts">瀚茶缘（雍和宫店</a>
+                        </li>
+                        <li class="qt">
+                            <a href="##">[<span class="type">购物</span>]</a>
+                            <a href="##" class="qt_texts">瀚茶缘（雍和宫店</a>
+                        </li>
+                        <li class="qt">
+                            <a href="##">[<span class="type">休闲</span>]</a>
+                            <a href="##" class="qt_texts">老北京一尊皇牛</a>
+                        </li>
+                        <li class="qt">
+                            <a href="##">[<span class="type">美食</span>]</a>
+                            <a href="##" class="qt_texts">老北京一尊皇牛</a>
+                        </li>
+                        <li class="qt">
+                            <a href="##">[<span class="type">购物</span>]</a>
+                            <a href="##" class="qt_texts">瀚茶缘（雍和宫店</a>
+                        </li>
+                        <li class="qt">
+                            <a href="##">[<span class="type">购物</span>]</a>
+                            <a href="##" class="qt_texts">老北京一尊皇牛</a>
+                        </li>
+                        <li class="qt">
+                            <a href="##">[<span class="type">购物</span>]</a>
+                            <a href="##" class="qt_texts">瀚茶缘（雍和宫店</a>
+                        </li>
+                        <li class="qt">
+                            <a href="##">[<span class="type">购物</span>]</a>
+                            <a href="##" class="qt_texts">瀚茶缘（雍和宫店</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contents new_coupons">
+                    <div class="div_title">
+                        <h4 class="div_name"><span class="div_en_name">COUPONS </span>最新加盟</h4>
+                        <a href="##"><img src="images/transparent.png" alt="xx" class="spirit more" /></a>
+                    </div>
+                    <div class="recommend">
+                        <a href="##">
+                            <img class="recommend_photo" src="images/shop_photo.png" alt="xx"/>
+                        </a>
+                        <div class="texts">
+                            <p class="shop_name">汉莱国际美食百汇</p>
+                            <p>
+                                <span class="type">口味：</span>
+                                <span class="shop_place">创意中餐</span>
+                            </p>
+                            <p>
+                                <span class="type">区域：</span>
+                                <span class="shop_place">朝阳/ABC</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="recommend">
+                        <a href="##">
+                            <img class="recommend_photo" src="images/shop_photo3.png" alt="xx"/>
+                        </a>
+                        <div class="texts">
+                            <p class="shop_name">汉莱国际美食百汇</p>
+                            <p>
+                                <span class="type">口味：</span>
+                                <span class="shop_place">创意中餐</span>
+                            </p>
+                            <p>
+                                <span class="type">区域：</span>
+                                <span class="shop_place">朝阳/ABC</span>
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="questions">
+                        <li class="qt">
+                            <a href="##">[<span class="type">美食</span>]</a>
+                            <a href="##" class="qt_texts">瀚茶缘（雍和宫店</a>
+                        </li>
+                        <li class="qt">
+                            <a href="##">[<span class="type">购物</span>]</a>
+                            <a href="##" class="qt_texts">瀚茶缘（雍和宫店</a>
+                        </li>
+                        <li class="qt">
+                            <a href="##">[<span class="type">休闲</span>]</a>
+                            <a href="##" class="qt_texts">老北京一尊皇牛</a>
+                        </li>
+                        <li class="qt">
+                            <a href="##">[<span class="type">美食</span>]</a>
+                            <a href="##" class="qt_texts">老北京一尊皇牛</a>
+                        </li>
+                        <li class="qt">
+                            <a href="##">[<span class="type">购物</span>]</a>
+                            <a href="##" class="qt_texts">瀚茶缘（雍和宫店</a>
+                        </li>
+                        <li class="qt">
+                            <a href="##">[<span class="type">购物</span>]</a>
+                            <a href="##" class="qt_texts">老北京一尊皇牛</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </article>
+        <footer>
+            <ul>
+                <li><a href="##">关于我们</a></li>
+                <li class="pipe">|</li>
+                <li><a href="##">联系我们</a></li>
+                <li class="pipe">|</li>
+                <li><a href="##">版权声明</a></li>
+                <li class="pipe">|</li>
+                <li><a href="##">加入我们</a></li>
+                <li class="pipe">|</li>
+                <li><a href="##">问题反馈</a></li>
+                <li class="pipe">|</li>
+                <li><a href="##">友情链接</a></li>
+                <li class="pipe">|</li>
+                <li><a href="##">网站地图</a></li>
+                <li class="pipe">|</li>
+                <li><a href="##">视频索引</a></li>
+            </ul>
+            <p class="copyright clear">
+                Copyright © 2008 www.100du.com 100度享乐网 版权所有 京ICP证070374号
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
